@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>@locals.title</title>
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="/stylesheets/foundation.css">
+  <link rel="stylesheet" href="/stylesheets/offcanvas.css">
+  <link rel="stylesheet" href="/stylesheets/jquery.noty.css">
+  <link rel="stylesheet" href="/stylesheets/app.css">
+
+  <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="/stylesheets/font-awesome-ie7.min.css">
+  <script src="/javascripts/lte-ie7.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="/stylesheets/ie.css">
+  <![endif]-->
+
+  <script src="/javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Wire up Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-88888888-8']);
+    _gaq.push(['_trackPageview']);
+  </script>
+
+</head>
+
+<body style="zoom: 1;">
+
+<!-- Navigation -->
+<div class="fixed">
+<nav class="top-bar">
+    <ul>
+      <!-- Title Area -->
+      <li class="name">
+        <h1>
+          <a href="#">
+            @locals.title
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar"><a href="#"></a></li>
+    </ul>
+
+    <section>
+      <!-- Left Nav Section -->
+      <ul class="left">
+      </ul>
+
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a href="/">accueil</a></li>
+        <li class="has-dropdown">
+          <a href="#">menu</a>
+          <ul class="dropdown">
+            <li><a href="/profile">Contact</a></li>
+            <li><a href="/stack">Boom!</a></li>
+            <li class="divider"></li>
+            <li><a href="#">other</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>
+<!-- End Navigation -->
+
+
+<div class="row page_top">
+  <div class="twelve columns">
+    @writeBody()
+    <!-- Footer -->
+
+    <footer class="row">
+      <div class="twelve columns"><hr>
+        <div class="row">
+
+          <div class="nine columns license">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ca/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ca/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ca/deed.en_GB">Creative Commons Attribution-NonCommercial-ShareAlike 2.5 Canada License</a>.
+          </div>
+
+          <div class="three columns">
+            <ul class="link-list right">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+  </div>
+</div>
+
+
+
+<script src="/javascripts/jquery.js"></script>
+<script src="/javascripts/jquery.noty.js"></script>
+@if(locals.flash) {
+<script type="text/javascript">
+  $(document).ready(function(){
+    var noty = $.noty({
+      text: "@locals.say(locals.flash.message)",
+      type: '@locals.flash.type',
+      timeout: false,
+      layout: "topRight",
+      closeButton: false
+    });
+  });
+</script>
+}
+<script src="/javascripts/jquery.foundation.reveal.js"></script>
+<script src="/javascripts/jquery.foundation.orbit.js"></script>
+<script src="/javascripts/jquery.foundation.forms.js"></script>
+<script src="/javascripts/jquery.placeholder.js"></script>
+<script src="/javascripts/jquery.foundation.tooltips.js"></script>
+<script src="/javascripts/jquery.foundation.alerts.js"></script>
+<script src="/javascripts/jquery.foundation.buttons.js"></script>
+<script src="/javascripts/jquery.foundation.accordion.js"></script>
+<script src="/javascripts/jquery.foundation.navigation.js"></script>
+<script src="/javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+<script src="/javascripts/jquery.foundation.topbar.js"></script>
+<script src="/javascripts/jquery.foundation.tabs.js"></script>
+<script src="/javascripts/jquery.offcanvas.js"></script>
+<script src="/javascripts/app.js"></script>
+</body>

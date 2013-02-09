@@ -1,0 +1,35 @@
+{
+  "name": "express-coffee-jshtml-zurb",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "source-map-support":"*",
+    "coffee-script": "1.x",
+    "express": "3.x",
+    "request": "2.12.x",
+    "jshtml": "0.2.3",
+    "i18n": "0.3.x",
+    "password-hash": "1.2.x",
+    "express-form": "*",
+    "object-additions": ">= 0.5.0",
+    "validator": "0.4.x",
+    "nodemailer": "0.3.x",
+    "sendgrid-nodejs": "0.1.x",
+    "colors": "0.6.x",
+    "ansispan": "0.0.x",
+    "geocoder": "0.1.x",
+    "ansi-to-html": "0.1.x",
+    "helmet": "0.0.x",
+    "bytes": "0.1.x",
+    "mime": "1.2.x",
+    "async": "0.1.x",
+    "node-html-encoder" : "0.x"
+  },
+  "subdomain": "ecjz",
+  "scripts": {
+    "start": "nodemon --watch . app.coffee INADDR_ANY 3000"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}

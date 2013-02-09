@@ -1,0 +1,4 @@
+{
+	"login": "connexion",
+	"Welcome!": "Bienvenue!"
+}
