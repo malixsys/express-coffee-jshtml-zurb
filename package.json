@@ -12,7 +12,7 @@
     "password-hash": "1.2.x",
     "express-form": "*",
     "object-additions": ">= 0.5.0",
-    "validator": "0.4.x",
+    "validator": "2.x",
     "nodemailer": "0.3.x",
     "sendgrid-nodejs": "0.1.x",
     "colors": "0.6.x",
@@ -21,7 +21,7 @@
     "ansi-to-html": "0.1.x",
     "helmet": "0.0.x",
     "bytes": "0.1.x",
-    "mime": "1.2.x",
+    "mime": "1.x",
     "async": "0.1.x",
     "node-html-encoder" : "0.x"
   },
